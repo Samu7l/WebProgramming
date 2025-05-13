@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Green IT - Sustainable Web</title>
+
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src= "../Test.js"> </script>
+    <link rel= "stylesheet" href="../css/about.css">
+
+</head>
+
+<body>
+<header>
+    <a href="https://www.greenit.net/">
+        <img alt="image alt text" src="../img/GreenIT2.png"/>
+    </a>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="GreenITSiteWeb.html">Green IT & websites</a>
+        <a href="QuizGreenIT.html">Green IT - Quiz </a>
+        <a href="./about.html">About</a>
+    </nav>
+</header>
+
+<section>
+    <h1>About</h1>
+    <p>
+        Page web made by the biggest ugbg of INT-1 aka Samuel Molliere
+        Leave a commment if you like the style of my page
+    </p>
+</section>
+
+<section>
+
+    <h2>Graphique XY</h2>
+
+    <div class="menu-container">
+        <div class="menu">
+            <button class="menu-toggle">Séance Push #1</button>
+            <div class="submenu hidden" >
+                <button class="dataset-btn" data-set="dataset1">Jeu 1</button>
+                <button class="dataset-btn" data-set="dataset2">Jeu 2</button>
+                <button class="dataset-btn" data-set="dataset3">Jeu 3</button>
+            </div>
+        </div>
+
+        <div class="menu">
+            <button class="menu-toggle">Séance Push #2</button>
+            <div class="submenu hidden" >
+                <button class="dataset-btn" data-set="dataset4">Jeu 4</button>
+                <button class="dataset-btn" data-set="dataset5">Jeu 5</button>
+                <button class="dataset-btn" data-set="dataset6">Jeu 6</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="graphContainer" class="hidden">
+        <canvas id="xyChart" width="600" height="400"></canvas>
+    </div>
+
+
+    <div id ="graphInfo" class = "hidden">
+        <h3>Ajouter un point</h3>
+        <form id="addPointForm">
+            X : <input type="number" id="xValue" step="any" inputmode="decimal" required>
+            Y : <input type="number" id="yValue" step="any" inputmode="decimal" required>
+            <button type="submit">Ajouter</button>
+         </form>
+        <h3>Points actuels</h3>
+            <ul id="pointList"></ul>
+    </div>
+
+</section>
+
+
+<footer>
+    ©️2024 Maha Naceur.
+    <br>
+    All rights reserved.
+    <br>
+    <a href="https://greenit.net/"> Find out more ? </a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+/* Étape 2 */
+body {
+    background-color: #90a955;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: justify;
+}
+
+header, footer {
+    background-image: url("../img/GreenIT_background.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+}
+
+header img {
+    border-radius: 10px;
+    border-radius: 10px;
+    display: block;
+    height : 200px;
+    width : 400px;
+    margin: auto;
+}
+
+section {
+    margin: 15px 15px;
+    text-align: center;
+    background-color: #ecf39e; /* voir pour changer */
+    padding: 15px;
+
+}
+
+fieldset {
+    margin: 15px 15px;
+    background-color: #ecf39e; /* voir pour changer */
+    padding: 15px;
+
+}
+
+h1, h2, h3{
+    font-family: "Lucida Console";
+}
+section h1 {
+    color: #31572c;
+    text-align: center;
+    font-size: 250%;
+}
+
+section h2 {
+    color: #4f772d;
+}
+
+h2 ~ h3 {
+    color: #AB92BF;
+}
+
+nav {
+    display: block;
+    padding: 15px;
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 120%;
+    padding: 10px 20px;
+}
+
+nav a:nth-child(1):hover, a:nth-child(2):hover, a:nth-child(3):hover, a:nth-child(4):hover {
+    background-color: #AFC1D6;
+    color: white;
+}
+
+section a {
+    color: #655A7C;
+    font-style: italic;
+}
+
+section ol, section ul{
+    display: inline-block;
+    text-align: center;
+}
+
+#citation, #definition {
+    color: #655A7C;
+    font-size: 150%;
+    font-style: italic;
+}
+
+#postit {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    font-size: 150%;
+}
+
+.postit-item {
+    background-color: #f9f9f9;
+    border: 1px solid ;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+}
+
+#postit .postit-item ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+#postit .postit-item:hover ul {
+    display: block;
+}
+
+
+#postit .postit-item ul li:hover {
+    background-color: #f1f1f1;
+}
+
+#postit .postit-item:nth-child(1), .postit-item:nth-child(2), .postit-item:nth-child(3), .postit-item:nth-child(4), .postit-item:nth-child(5) {
+    background-color: #31572c;
+    color: #90a955;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #2e7d32;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #a7c957;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #6a994e;
+    color: white;
+}
+
+table, td, caption {
+    border: 2px solid #333;
+}
+
+caption, thead {
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+caption {
+    margin-top : 15px;
+}
+
+
+fieldset {
+    border: 1px solid #2e7d32;
+    margin-bottom: 10px;
+}
+
+fieldset legend {
+    padding: 5px 10px;
+    background-color: #2e7d32;
+    border-radius: 8px;
+}

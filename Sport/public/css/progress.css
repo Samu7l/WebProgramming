@@ -1,12 +1,12 @@
 /* Étape 2 */
 body {
-    background-color: #90a955;
+    background-color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
 }
 
 header, footer {
-    background-image: url("../img/GreenIT_background.jpg");
+    background-image: url("../img/Menu.jpeg");
     background-position: center;
     background-repeat: repeat;
     padding: 15px;
@@ -27,8 +27,10 @@ header img {
 section {
     margin: 15px 15px;
     text-align: center;
-    background-color: #ecf39e; /* voir pour changer */
+    background-color: white;/*#ecf39e;  voir pour changer */
     padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -43,9 +45,10 @@ h1, h2, h3{
     font-family: "Lucida Console";
 }
 section h1 {
-    color: #31572c;
+    color: #00455c;
     text-align: center;
     font-size: 250%;
+    font-weight: bold;
 }
 
 section h2 {
@@ -57,22 +60,33 @@ h2 ~ h3 {
 }
 
 nav {
-    display: block;
+    display: flex;
     padding: 15px;
     margin: 15px;
+    gap : 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    align-items: center;
+    align-content: center;
+    align-self: center;
     color: white;
     border-radius: 5px;
     font-size: 120%;
+    font-weight: bold;
     padding: 10px 20px;
+    background-color: #00aa9f;
 }
 
 nav a:nth-child(1):hover, a:nth-child(2):hover, a:nth-child(3):hover, a:nth-child(4):hover {
-    background-color: #AFC1D6;
+    background-color: #00465b;
     color: white;
+    transition: 0.2s;
 }
 
 section a {
@@ -177,32 +191,31 @@ fieldset legend {
 
 /*nouveauté*/
 
-
-
-#graphContainer {
+.progress-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    width: fit-content;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#xyChart {
+    width: 400px;   /* ou 100%, ou auto selon ton besoin */
+    height: 250px;  /* ajuste selon ce que tu préfères */
 }
 
 
 /* Conteneur du graphique */
 #graphContainer {
+    flex : 2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px auto;
+    border-radius: 10px;
     background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    width: fit-content;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 #graphContainer.hidden,
@@ -212,6 +225,7 @@ fieldset legend {
 
 /* Conteneur des menus principaux */
 .menu-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -228,13 +242,15 @@ fieldset legend {
 
 /* Bouton principal (menu déroulant) */
 .menu-toggle {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 14px;
+    font-weight: bold;
     font-size: 16px;
     border: none;
     cursor: pointer;
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Sous-menu vertical */
@@ -250,18 +266,22 @@ fieldset legend {
     padding: 8px 14px;
     border: none;
     border-radius: 6px;
-    background-color: #eee;
+    background-color: white;
     cursor: pointer;
     transition: background-color 0.2s;
     text-align: left;
-    width: 120px;
+    width: 400px;
+    font-size : 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
 }
 
-.submenu button:hover {
-    background-color: #ccc;
+.submenu button:hover, .menu-toggle:hover {
+    background-color: #eee;
     font-width: bold;
-}
+    transition: 0.2s;
 
+}
 
 .hidden {
     display: none;

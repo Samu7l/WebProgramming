@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Green IT - Sustainable Web</title>
+
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src= "../Test.js"> </script>
+    <link rel= "stylesheet" href="../css/progress.css">
+
+</head>
+
+<body>
+<header>
+    <a href="https://www.greenit.net/">
+        <img alt="image alt text" src="../img/Logo.png"/>
+    </a>
+    <nav>
+        <a href="/html/home.html">Home</a>
+        <a href="/html/GreenITSiteWeb.html">Green IT & websites</a>
+        <a href="/html/QuizGreenIT.html">Green IT - Quiz </a>
+        <a href="/html/progress.html">My Progress</a>
+    </nav>
+</header>
+
+<section>
+    <h1>My Progress</h1>
+    <p>
+        This interactive page allows you to track your progress for each training session.
+        You can visualize your performance evolution with personalized graphs, record your points for each exercise, and compare results between different sessions.
+        Each button corresponds to a specific set of exercises, organized by session.
+        Add your data, view it instantly, and measure your improvements at a glance.
+    </p>
+</section>
+
+<section>
+
+    <div class ="progress-section">
+        <div class="menu-container">
+            <div class="menu">
+                <button class="menu-toggle">Push Day #1</button>
+                <div class="submenu hidden" >
+                    <button class="dataset-btn" data-set="dataset1">
+                        #1 - Développé couché - barre à disques
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset2">
+                        #2 - Traction vers le bas des triceps - Poulie
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset3">
+                        #3 - Relevé latéral - Poulie
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset4">
+                        #4 - Pec deck - machine
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset5">
+                        #5 - Développé assis - machine Smith
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset6">
+                        #6 - Extension triceps - poulie
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <button class="menu-toggle">Pull Day #1</button>
+                <div class="submenu hidden" >
+                    <button class="dataset-btn" data-set="dataset11">
+                        #1 - Traction
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset12">
+                        #2 - Flexion des biceps - Poulie
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset13">
+                        #3 - Rowing dorsal
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset14">
+                        #4 - Curl biceps - Barre en Z
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset15">
+                        #5 - Rowing horizontal - Poulie
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset16">
+                        #6 - Flexion prise marteau - Deux côtés
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset17">
+                        #7 - Shrugs debout - Barre à disques
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset18">
+                        #8 - Horizontal row - Platloaded
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <button class="menu-toggle">Legs Day #1</button>
+                <div class="submenu hidden" >
+                    <button class="dataset-btn" data-set="dataset21">
+                        #1 - Hack squat - machine
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset22">
+                        #2 - Flexion des jambes - machine
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset23">
+                        #3 - Abducteurs - machine
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset24">
+                        #4 - Adducteurs - machine
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset25">
+                        #5 - Extension des jambes assis
+                    </button>
+
+                    <button class="dataset-btn" data-set="dataset26">
+                        #6 - Extension des mollets
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div id="graphContainer" class="hidden">
+            <canvas id="xyChart" width=600px height=350px ></canvas>
+        </div>
+
+         <div id ="graphInfo" class = "hidden">
+            <h3>Ajouter un point</h3>
+             <form id="addPointForm">
+                   X : <input type="number" id="xValue" step="any" inputmode="decimal" required>
+                  Y : <input type="number" id="yValue" step="any" inputmode="decimal" required>
+                <button type="submit">Ajouter</button>
+            </form>
+             <h3>Points actuels</h3>
+                <ul id="pointList"></ul>
+        </div>
+    </div>
+
+</section>
+
+
+<footer>
+    ©️2024 Maha Naceur.
+    <br>
+    All rights reserved.
+    <br>
+    <a href="https://greenit.net/"> Find out more ? </a>
+</footer>
+
+</body>
+</html>

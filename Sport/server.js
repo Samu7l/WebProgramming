@@ -66,11 +66,11 @@ app.get('/load-csv', (req, res) => {
     res.json(datasets);
 });
 
-app.get('/about', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'public/html/about.html'));
+app.get('/progress', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'public/html/progress.html'));
 });
 
 // Lancement serveur
 app.listen(PORT, () => {
-    console.log(`✅ Serveur prêt sur http://localhost:${PORT}/about`);
+    console.log(`✅ Serveur prêt sur http://localhost:${PORT}/progress`);
 });

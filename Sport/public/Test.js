@@ -14,23 +14,38 @@ document.addEventListener("DOMContentLoaded", function () {
     graphContainer.classList.add('hidden');
     graphInfo.classList.add('hidden');
 
+    let currentPage = 0;
+    const itemsPerPage = 5;
+
     function updatePointList() {
         pointList.innerHTML = '';
-        datasets[currentKey].forEach((point, index) => {
+
+        const points = datasets[currentKey] || [];
+        const startIndex = currentPage * itemsPerPage;
+        const endIndex = Math.min(startIndex + itemsPerPage, points.length);
+        const visiblePoints = points.slice(startIndex, endIndex);
+
+        visiblePoints.forEach((point, index) => {
             const li = document.createElement('li');
-            li.textContent = `x: ${point.x.toFixed(2)}, y: ${point.y.toFixed(2)}`;
+            li.textContent = `x: ${point.x}, y: ${point.y} `;
+
             const btn = document.createElement('button');
             btn.textContent = 'Supprimer';
             btn.onclick = () => {
-                datasets[currentKey].splice(index, 1);
-                updateChart();
+                datasets[currentKey].splice(startIndex + index, 1); // Corriger l'index global
                 updatePointList();
+                updateChart();
                 saveToCSV();
             };
+
             li.appendChild(btn);
             pointList.appendChild(li);
         });
+        // Met à jour l'état des boutons
+        document.getElementById('prevPageBtn').disabled = currentPage === 0;
+        document.getElementById('nextPageBtn').disabled = endIndex >= points.length;
     }
+
 
     function updateChart() {
         if (chart) chart.destroy();
@@ -58,20 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
         graphContainer.classList.remove('hidden');
         graphInfo.classList.remove('hidden');
     }
-    /* ancienne fonction
-    function saveToCSV() {
-        fetch('/save-csv', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(datasets)
-        })
-            .then(res => res.text())
-            .then(message => alert(message))
-            .catch(err => {
-                    console.error("Erreur pendant le POST /save-csv :", err);
-                    alert("Erreur lors de l'enregistrement (voir la console).");
-                });
-    }*/
 
     function saveToCSV() {
         const cleanData = JSON.parse(JSON.stringify(datasets)); // nettoyage simple
@@ -131,6 +132,22 @@ document.addEventListener("DOMContentLoaded", function () {
             submenu.classList.toggle('hidden');
         });
     });
+
+
+    document.getElementById('prevPageBtn').addEventListener('click', () => {
+        if (currentPage > 0) {
+            currentPage--;
+            updatePointList();
+        }
+    });
+
+    document.getElementById('nextPageBtn').addEventListener('click', () => {
+        if ((currentPage + 1) * itemsPerPage < (datasets[currentKey] || []).length) {
+            currentPage++;
+            updatePointList();
+        }
+    });
+
 
     fetch('/load-csv')
         .then(res => res.json())

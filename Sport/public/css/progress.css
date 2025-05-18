@@ -283,6 +283,47 @@ fieldset legend {
 
 }
 
+#pointList li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.pagination-controls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.pagination-controls button {
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.pagination-controls button:hover {
+    background-color: #ccc;
+}
+
+#pointList button {
+    margin-left: 10px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.85rem;
+}
+
+#pointList button:hover {
+    background-color: #e60000;
+}
+
+
+
 .hidden {
     display: none;
 }

@@ -18,7 +18,6 @@ header, footer {
 
 header img {
     border-radius: 10px;
-    border-radius: 10px;
     display: block;
     height : 200px;
     width : 400px;
@@ -34,6 +33,80 @@ section {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 
 }
+
+
+.habits-section {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.habits-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.habits-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.habit-card {
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.habit-card:hover {
+    transform: translateY(-5px);
+}
+
+.habit-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #00a896;
+    text-align: center;
+}
+
+.habit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.habit-card ul {
+    padding-left: 20px;
+
+}
+
+.habit-card li {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.habit-card p {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 fieldset {
     margin: 15px 15px;
@@ -98,7 +171,7 @@ section ol, section ul{
     text-align: center;
 }
 
-#citation, #definition {
+#citation, .definition {
     color: #655A7C;
     font-size: 150%;
     font-style: italic;

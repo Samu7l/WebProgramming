@@ -147,18 +147,17 @@ nav a {
     align-items: center;
     align-content: center;
     align-self: center;
-    color: white;
+    color: black;
     border-radius: 5px;
     font-size: 120%;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #00aa9f;
+    background-color: #ffffff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
-
 nav a:nth-child(1):hover, a:nth-child(2):hover, a:nth-child(3):hover, a:nth-child(4):hover {
-    background-color: #00465b;
+    background-color: #bfbfbf;
     color: white;
     transition: 0.2s;
 }

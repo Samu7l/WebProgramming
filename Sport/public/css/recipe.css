@@ -74,16 +74,17 @@ nav a {
     align-items: center;
     align-content: center;
     align-self: center;
-    color: white;
+    color: black;
     border-radius: 5px;
     font-size: 120%;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #00aa9f;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 nav a:nth-child(1):hover, a:nth-child(2):hover, a:nth-child(3):hover, a:nth-child(4):hover {
-    background-color: #00465b;
+    background-color: #bfbfbf;
     color: white;
     transition: 0.2s;
 }
@@ -325,5 +326,106 @@ fieldset legend {
 
 .hidden {
     display: none;
+}
+
+
+
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.card {
+    width: 150px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+
+}
+
+.card:hover .avocado-drop{
+    display: block;
+}
+
+.card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.card p {
+    font-size: 0.85em;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+th {
+    background-color: lightskyblue;
+}
+
+.avocado-drop{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.hidden{
+    display : none;
+}
+
+.recipe-details {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 0.95em;
+}
+
+.recipe-details ul,
+.recipe-details ol{
+    margin-left: 20px;
+    text-align: left;
+}
+
+.recipe-details.hidden{
+    display: none;
+}
+
+.card {
+    cursor: pointer;
 }
 

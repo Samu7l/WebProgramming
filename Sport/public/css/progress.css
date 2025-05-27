@@ -395,3 +395,32 @@ th {
     z-index: 1;
 }
 
+.hidden{
+    display : none;
+}
+
+.recipe-details {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 0.95em;
+}
+
+.recipe-details ul,
+.recipe-details ol{
+    margin-left: 20px;
+    text-align: left;
+}
+
+.recipe-details.hidden{
+    display: none;
+}
+
+.card {
+    cursor: pointer;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel= "stylesheet" href="../css/progress.css">
+    <title>Green IT & Sites web</title>
+    <meta charset="UTF-8">
+
+
+</head>
+<body>
+<header>
+    <a href="https://www.instagram.com/morganemakeupytb/">
+        <img alt="image alt text" src="../img/LOGO.png"/>
+    </a>
+    <nav>
+        <a href="../html/home.html">Home</a>
+        <a href="../html/recipes.html">Healthy Recipes</a>
+        <a href="../html/progress.html">My progress</a>
+        <a href="../html/AboutUs.html">About us</a>
+    </nav>
+</header>
+
+<section>
+    <h1>Healthy Recipes</h1>
+    <p>
+        Here you can find a selection of nutritious recipes to help you stay healthy and stimulate your muscle growth through
+        balanced and wholesome ingredients. You will also find information on food supplements that can support your dietary needs
+        according to your sport routine. In addition, you will discover which food are best avoided, especially the one with
+        processed sugar to help you make informed and mindful eating choices.
+    </p>
+</section>
+
+<section>
+    <h2>Our Recipes</h2>
+    <div class="card-row">
+        <div class="card" onclick="showRecipe('avocado')">
+            <img src="../img/Avocado.jpg" alt="Avocado Toast">
+            <p>Avocado Toast with poached eggs</p>
+        </div>
+        <div class="card" onclick="showRecipe('quinoa')">
+            <img src="../img/Quinoa_bowl.jpg" alt="Quinoa Bowl">
+            <p>Quinoa bowl with veggies and tahini dressing.</p>
+        </div>
+        <div class="card" onclick="showRecipe('smoothie')">
+            <img src="../img/Berry_smoothie.jpg" alt="Berry Smoothie">
+            <p>Smoothie with banana, spinach, and berries.</p>
+        </div>
+    </div>
+
+    <div class="recipe-details">
+
+    </div>
+
+
+
+    <!-- RECIPE DETAILS BELOW THE CARDS -->
+    <div id="avocado" class="recipe-details hidden">
+        <h3>Avocado Toast with Poached Eggs</h3>
+        <ul>
+            <li>2 slices of whole grain bread</li>
+            <li>1 ripe avocado</li>
+            <li>2 eggs</li>
+            <li>Salt and pepper to taste</li>
+        </ul>
+        <p>Toast bread, mash avocado, poach eggs, and assemble.</p>
+    </div>
+
+    <div id="quinoa" class="recipe-details hidden">
+        <h3>Quinoa Bowl</h3>
+        <ul>
+            <li>1 cup cooked quinoa</li>
+            <li>1/2 cup roasted veggies</li>
+            <li>1 tbsp tahini</li>
+        </ul>
+        <p>Combine all ingredients in a bowl and drizzle with tahini.</p>
+    </div>
+
+    <div id="smoothie" class="recipe-details hidden">
+        <h3>Green Smoothie</h3>
+        <ul>
+            <li>1 banana</li>
+            <li>1 cup spinach</li>
+            <li>1/2 cup frozen berries</li>
+            <li>1 cup almond milk</li>
+        </ul>
+        <p>Blend all ingredients until smooth.</p>
+    </div>
+</section>
+
+
+<section>
+    <h2>Healthy Foods</h2>
+    <div class="card-row">
+        <div class="card">
+            <img src="../img/Broccoli.jpg" alt="Broccoli">
+            <p>Rich in fiber, vitamin C, and antioxidants.</p>
+        </div>
+        <div class="card">
+            <img src="../img/Salmon.jpg" alt="Salmon">
+            <p>High in omega-3 fatty acids.</p>
+        </div>
+        <div class="card">
+            <img src="../img/oats.jpg" alt="Oatmeal">
+            <p>Whole grains for blood sugar control.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Food Supplements Section -->
+<section>
+    <h2>Food Supplements</h2>
+    <div class="card-row">
+        <div class="card">
+            <img src="../img/Vitamin%20DD.jpg" alt="Vitamin D">
+            <h3>Vitamin D</h3>
+            <p>The vitamin D can be extracted from vegetation or from animals. It boosts bone and immune health.</p>
+        </div>
+        <div class="card">
+            <img src="../img/Poisson.jpg" alt="Omega-3">
+            <h3>Omega 3</h3>
+            <p>These supplements are oils, often extracted from sea animals, that you can take as a additional pill or simply by eating fish. It supports heart and brain health.</p>
+        </div>
+        <div class="card">
+            <img src="../img/Probioticsss.jpg" alt="Probiotics">
+            <h3>Probiotics</h3>
+            <p>The "good" bacteria inside of pour intestines. Improves digestion and gut flora.</p>
+        </div>
+        <div class="card">
+            <img src="../img/Charbon.jpg" alt="Vegetal carbon">
+            <h3>Vegetal carbon</h3>
+            <p>Vegetal carbon can be useful to prevent a too high level of air in the body, uncomfortable for efficient sport sessions</p>
+        </div>
+    </div>
+</section>
+
+<!-- To Avoid Section -->
+<section>
+    <h2>To Avoid</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Food to Avoid</th>
+            <th>Calories & Sugar</th>
+            <th>Healthier Alternative</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Sugary Cereal</td>
+            <td>200 cal / 15g sugar</td>
+            <td>Oatmeal with fruits</td>
+        </tr>
+        <tr>
+            <td>Soda</td>
+            <td>150 cal / 39g sugar</td>
+            <td>Infused water</td>
+        </tr>
+        <tr>
+            <td>French Fries</td>
+            <td>300 cal / 0g sugar</td>
+            <td>Baked sweet potatoes</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<script>
+    function showRecipe(recname) {
+
+
+        if(recname==="avocado"){
+            let target=document.getElementById("avocado");
+            target.removeAttribute('hidden');
+        }
+    }
+</script>
+
+</body>
+

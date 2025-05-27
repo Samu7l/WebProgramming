@@ -153,7 +153,9 @@ nav a {
     font-weight: bold;
     padding: 10px 20px;
     background-color: #00aa9f;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
+
 
 nav a:nth-child(1):hover, a:nth-child(2):hover, a:nth-child(3):hover, a:nth-child(4):hover {
     background-color: #00465b;

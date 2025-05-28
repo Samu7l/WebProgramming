@@ -133,6 +133,7 @@ section {
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     padding: 40px;
+    border-radius: 35px;
     background-color: #fff;
 }
 

@@ -8,10 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src= "../Test.js"> </script>
     <link rel= "stylesheet" href="../css/progress.css">
-
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -30,7 +27,7 @@
 
 <section>
     <h1>My Progress</h1>
-    <p>
+    <p class = definition>
         This interactive page allows you to track your progress for each training session.
         You can visualize your performance evolution with personalized graphs, record your points for each exercise, and compare results between different sessions.
         Each button corresponds to a specific set of exercises, organized by session.
@@ -40,134 +37,192 @@
 
 <section>
 
-    <div class ="progress-section">
-        <div class="menu-container">
-            <div class="menu">
-                <button class="menu-toggle">Push Day #1</button>
-                <div class="submenu hidden" >
-                    <button class="dataset-btn" data-set="dataset1">
-                        #1 - Développé couché - barre à disques
-                    </button>
 
-                    <button class="dataset-btn" data-set="dataset2">
-                        #2 - Traction vers le bas des triceps - Poulie
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset3">
-                        #3 - Relevé latéral - Poulie
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset4">
-                        #4 - Pec deck - machine
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset5">
-                        #5 - Développé assis - machine Smith
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset6">
-                        #6 - Extension triceps - poulie
-                    </button>
-                </div>
-            </div>
-
-            <div class="menu">
-                <button class="menu-toggle">Pull Day #1</button>
-                <div class="submenu hidden" >
-                    <button class="dataset-btn" data-set="dataset11">
-                        #1 - Traction
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset12">
-                        #2 - Flexion des biceps - Poulie
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset13">
-                        #3 - Rowing dorsal
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset14">
-                        #4 - Curl biceps - Barre en Z
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset15">
-                        #5 - Rowing horizontal - Poulie
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset16">
-                        #6 - Flexion prise marteau - Deux côtés
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset17">
-                        #7 - Shrugs debout - Barre à disques
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset18">
-                        #8 - Horizontal row - Platloaded
-                    </button>
-                </div>
-            </div>
-
-            <div class="menu">
-                <button class="menu-toggle">Legs Day #1</button>
-                <div class="submenu hidden" >
-                    <button class="dataset-btn" data-set="dataset21">
-                        #1 - Hack squat - machine
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset22">
-                        #2 - Flexion des jambes - machine
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset23">
-                        #3 - Abducteurs - machine
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset24">
-                        #4 - Adducteurs - machine
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset25">
-                        #5 - Extension des jambes assis
-                    </button>
-
-                    <button class="dataset-btn" data-set="dataset26">
-                        #6 - Extension des mollets
-                    </button>
-
-                </div>
-            </div>
-        </div>
-        <div id="graphContainer" class="hidden">
-            <canvas id="xyChart" width=600px height=350px ></canvas>
+    <div>
+        <div class = "main-zone">
+            <button class="menu-toggle" data-target="submenu1">Push Day #1</button>
+            <button class="menu-toggle" data-target="submenu2">Pull Day #1</button>
+            <button class="menu-toggle" data-target="submenu3">Legs Day #1</button>
         </div>
 
-         <div id ="graphInfo" class = "hidden">
-            <h3>Ajouter un point</h3>
-             <form id="addPointForm">
-                   X : <input type="number" id="xValue" step="any" inputmode="decimal" required>
-                  Y : <input type="number" id="yValue" step="any" inputmode="decimal" required>
-                <button type="submit">Ajouter</button>
-            </form>
-             <h3>Points actuels</h3>
-                <ul id="pointList"></ul>
+        <div class ="menu-and-graph">
+            <div id = "submenu1" class="submenu hidden" >
+                <button class="dataset-btn" data-set="dataset1">
+                    #1 - Développé couché - barre à disques
+                </button>
 
-             <div class="pagination-controls">
-                 <button id="prevPageBtn">← Previous</button>
-                 <button id="nextPageBtn">Next →</button>
+                <button class="dataset-btn" data-set="dataset2">
+                    #2 - Traction vers le bas des triceps - Poulie
+                </button>
+
+                <button class="dataset-btn" data-set="dataset3">
+                    #3 - Relevé latéral - Poulie
+                </button>
+
+                <button class="dataset-btn" data-set="dataset4">
+                    #4 - Pec deck - machine
+                </button>
+
+                <button class="dataset-btn" data-set="dataset5">
+                    #5 - Développé assis - machine Smith
+                </button>
+
+                <button class="dataset-btn" data-set="dataset6">
+                    #6 - Extension triceps - poulie
+                </button>
+            </div>
+
+            <div id ="submenu2" class="submenu hidden" >
+                <button class="dataset-btn" data-set="dataset11">
+                    #1 - Traction
+                </button>
+
+                <button class="dataset-btn" data-set="dataset12">
+                    #2 - Flexion des biceps - Poulie
+                </button>
+
+                <button class="dataset-btn" data-set="dataset13">
+                    #3 - Rowing dorsal
+                </button>
+
+                <button class="dataset-btn" data-set="dataset14">
+                    #4 - Curl biceps - Barre en Z
+                </button>
+
+                <button class="dataset-btn" data-set="dataset15">
+                    #5 - Rowing horizontal - Poulie
+                </button>
+
+                <button class="dataset-btn" data-set="dataset16">
+                    #6 - Flexion prise marteau - Deux côtés
+                </button>
+
+                <button class="dataset-btn" data-set="dataset17">
+                    #7 - Shrugs debout - Barre à disques
+                </button>
+
+                <button class="dataset-btn" data-set="dataset18">
+                    #8 - Horizontal row - Platloaded
+                </button>
+            </div>
+            <div id ="submenu3" class="submenu hidden" >
+                <button class="dataset-btn" data-set="dataset21">
+                    #1 - Hack squat - machine
+                </button>
+
+                <button class="dataset-btn" data-set="dataset22">
+                    #2 - Flexion des jambes - machine
+                </button>
+
+                <button class="dataset-btn" data-set="dataset23">
+                    #3 - Abducteurs - machine
+                </button>
+
+                <button class="dataset-btn" data-set="dataset24">
+                    #4 - Adducteurs - machine
+                </button>
+
+                <button class="dataset-btn" data-set="dataset25">
+                    #5 - Extension des jambes assis
+                </button>
+
+                <button class="dataset-btn" data-set="dataset26">
+                    #6 - Extension des mollets
+                </button>
+
+            </div>
+
+            <div id="graphContainer" class="hidden">
+                <canvas id="xyChart" width=600px height=350px ></canvas>
+            </div>
+
+             <div id ="graphInfo" class = "hidden">
+                <h3>Ajouter un point</h3>
+                 <form id="addPointForm">
+                       X : <input type="number" id="xValue" step="any" inputmode="decimal" required>
+                      Y : <input type="number" id="yValue" step="any" inputmode="decimal" required>
+                    <button type="submit">Ajouter</button>
+                </form>
+                 <h3>Points actuels</h3>
+                    <ul id="pointList"></ul>
+
+                 <div class="pagination-controls">
+                     <button id="prevPageBtn">← Previous</button>
+                     <button id="nextPageBtn">Next →</button>
+                 </div>
              </div>
-         </div>
+        </div>
     </div>
 
 </section>
 
-
 <footer>
-    ©️2024 Maha Naceur.
-    <br>
-    All rights reserved.
-    <br>
-    <a href="https://greenit.net/"> Find out more ? </a>
+    <div class="footer-container">
+        <div class = "footer-address">
+            <div class ="h1">
+                Address
+            </div>
+            <div class ="h2">
+                5 Rue des Déportés, 54190 Villerupt
+            </div>
+        </div>
+
+        <div class = "footer-address">
+            <div class ="h1">
+                E-mail
+            </div>
+            <div class ="h2">
+                fit-track-life-trashcan@gmail.com
+            </div>
+        </div>
+
+        <div class = "footer-address">
+            <div class ="h1">
+                Questions ?
+            </div>
+            <div class ="h2">
+                FAQ
+            </div>
+
+            <div class ="h2">
+                Contact us
+            </div>
+        </div>
+
+        <div class = "footer-address">
+            <div class ="h1">
+                Download FitTrack Life
+            </div>
+            <div class ="h2">
+                <img alt="image alt text" src="../img/AppStore.png" height="50px" width="165px"/>
+            </div>
+
+            <div class ="h2">
+                <img alt="image alt text" src="../img/GooglePlay.png" height="50px" width="165px"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-separator">
+        <div class="line"></div>
+    </div>
+
+    <div class="footer-button">
+        <div class ="bellow-line">
+            <div class="social-icon">
+                <a href="https://facebook.com" target="_blank" class = "Icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class = "Icon"> <i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/clay_clay94/" target="_blank" class = "Icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class = "Icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com" target="_blank" class = "Icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class = "bellow-line">
+            <div class ="h1-2">
+                Created by Samuel & Iza
+            </div>
+        </div>
+    </div>
 </footer>
 
 </body>

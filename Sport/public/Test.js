@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    /*
     document.querySelectorAll('.menu-container .menu-toggle').forEach(toggleBtn => {
         toggleBtn.addEventListener('click', () => {
             const submenu = toggleBtn.nextElementSibling;
@@ -130,6 +131,22 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             submenu.classList.toggle('hidden');
+        });
+    });
+    */
+
+    document.querySelectorAll('.menu-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-target');
+            document.querySelectorAll('.submenu').forEach(menu => {
+                if (menu.id === targetId) {
+                    menu.classList.toggle('hidden');
+                } else {
+                    menu.classList.add('hidden');
+                }
+                updateChart();
+                updatePointList();
+            });
         });
     });
 

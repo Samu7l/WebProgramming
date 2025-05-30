@@ -70,7 +70,7 @@
 
         <div class="habits-container">
             <div class="habit-card">
-                <div class="habit-icon">
+                <div class="brand-icon">
                     <img alt="Logo OMS" src="../img/LogoA.png" height="80px" width="90px"/>
                 </div>
                 <h3>OMS</h3>
@@ -82,7 +82,7 @@
             </div>
 
             <div class="habit-card">
-                <div class="habit-icon">
+                <div class="brand-icon">
                     <img alt="Logo Harvard Health" src="../img/LogoB.png" height="80px" width="142px"/>
                 </div>
                 <h3>Harvard Health</h3>
@@ -93,7 +93,7 @@
             </div>
 
             <div class="habit-card">
-                <div class="habit-icon">
+                <div class="brand-icon">
                     <img alt="Logo Mayo Clinic" src="../img/LogoC.png" height="80px" width="107px"/>
                 </div>
                 <h3>Mayo Clinic</h3>
@@ -107,43 +107,50 @@
 
 
     <section class="habits-section">
-        <h1>Le saviez vous ?</h1>
-        <p class = "definition">
-            La science le dit : adopter un mode de vie sain pour changer votre vie.
-        </p>
-
-        <div class="habits-container">
-            <div class="habit-card">
-                <div class="habit-icon">
-                    <img alt="Logo Harvard Health" src="../img/LogoB.png" height="80px" width="142px"/>
+        <div class="functionalities-container">
+            <div class="pages-card">
+                <h1>Recettes healthy</h1>
+                <div class = "sample-recipes">
+                    <div>
+                        <div class="habit-icon">
+                            <img src="../img/Sample1.png"/>
+                        </div>
+                        <h3>Smoothie</h3>
+                    </div>
+                    <div>
+                        <div class="habit-icon">
+                            <img src="../img/Sample2.png"/>
+                        </div>
+                        <h3>Oatmeal</h3>
+                    </div>
+                    <div>
+                        <div class="habit-icon">
+                            <img src="../img/Sample3.png"/>
+                        </div>
+                        <h3>Grilled Chicken</h3>
+                    </div>
+                    <div>
+                        <div class="habit-icon">
+                            <img src="../img/Sample4.png"/>
+                        </div>
+                        <h3>Quinoa Salad</h3>
+                    </div>
                 </div>
-                <h3>Harvard Health</h3>
-                <p>
-                    Une alimentation riche en légumes, fruits et
-                    céréales complète est associée à de nombreux bienfaits sur la santé
-                </p>
+                <a href="/html/recipe.html">Voir toutes les recettes</a>
             </div>
 
-            <div class="habit-card">
+            <div class="vertical-separator">
+            </div>
+
+            <div class="pages-card">
+                <h1>Suivez votre progression</h1>
                 <div class="habit-icon">
-                    <img alt="Logo Mayo Clinic" src="../img/LogoC.png" height="80px" width="107px"/>
+                    <img id = "fakegraph" src="../img/Sample5.png" />
                 </div>
-                <h3>Mayo Clinic</h3>
-                <p>
-                    Faire de l'exercice régulièrement est un des
-                    meilleurs moyens d'améliorer votre santé et votre bien-être
-                </p>
+                <a href="/html/progress.html">Suivre mes progrès</a>
             </div>
         </div>
     </section>
-
-
-    <nav>
-        <a href="/html/home.html">Home</a>
-        <a href="/html/recipe.html">Healthy Recipes</a>
-        <a href="/html/progress.html">My progress</a>
-        <a href="/html/form.html">About us</a>
-    </nav>
 
     <footer>
         <div class="footer-container">
@@ -152,7 +159,8 @@
                     Address
                 </div>
                 <div class ="h2">
-                    5 Rue des Déportés, 54190 Villerupt
+                    30-32 Av. de la République <hr>
+                    94800 Villejuif
                 </div>
             </div>
 
@@ -161,7 +169,8 @@
                     E-mail
                 </div>
                 <div class ="h2">
-                    fit-track-life-trashcan@gmail.com
+                    <a class="clickable-footer" href="mailto:fit-track-life-trashcan@gmail.com" class="ContactUS">Contact us</a> <hr>
+                    fit-track-life@gmail.com
                 </div>
             </div>
 
@@ -174,7 +183,7 @@
                 </div>
 
                 <div class ="h2">
-                    Contact us
+                    <a class="clickable-footer" href="/html/about.html">About us</a>
                 </div>
             </div>
 

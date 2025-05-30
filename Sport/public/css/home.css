@@ -5,6 +5,7 @@ body {
     justify-content: center;
 }
 
+/*header and footer*/
 
 header {
     background-image: url("../img/Menu.jpeg");
@@ -16,8 +17,13 @@ header {
     font-size: 120%;
 }
 
-
-
+header img {
+    border-radius: 10px;
+    display: block;
+    height : 200px;
+    width : 400px;
+    margin: auto;
+}
 
 footer{
     background-color: #041726;
@@ -81,7 +87,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap : 1150px;
+    gap : 50%;
 }
 
 
@@ -109,14 +115,15 @@ footer{
     transition: 0.2s;
 }
 
-
-header img {
-    border-radius: 10px;
-    display: block;
-    height : 200px;
-    width : 400px;
-    margin: auto;
+.clickable-footer {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-style : italic;
 }
+
+
+/*basic*/
 
 section {
     margin: 15px 15px;
@@ -127,6 +134,23 @@ section {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 
 }
+
+section h1 {
+    color: #00455c;
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+#citation, .definition {
+    color: #655A7C;
+    font-size: 150%;
+    font-style: italic;
+}
+
+
+
+/* Section conseil*/
 
 
 .habits-section {
@@ -159,6 +183,7 @@ section {
     transition: transform 0.3s;
 }
 
+
 .habit-card:hover {
     transform: translateY(-25px);
 }
@@ -166,7 +191,6 @@ section {
 .habit-icon {
     font-size: 40px;
     margin-bottom: 10px;
-    color: #00a896;
     text-align: center;
 }
 
@@ -178,7 +202,6 @@ section {
 
 .habit-card ul {
     padding-left: 20px;
-
 }
 
 .habit-card li {
@@ -187,316 +210,84 @@ section {
     text-align: justify;
 }
 
-.habit-card p {
+.habit-card p{
     margin-bottom: 6px;
     font-size: 1.2rem;
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-fieldset {
-    margin: 15px 15px;
-    background-color: #ecf39e; /* voir pour changer */
-    padding: 15px;
-
+.brand-icon img {
+    display: block;
+    margin: 0 auto;
 }
 
+/*Section pour naviguer dans les pages (avec du spoil en gros)*/
 
-section h1 {
-    color: #00455c;
-    text-align: center;
-    font-size: 250%;
-    font-weight: bold;
-}
-
-section h2 {
-    color: #4f772d;
-}
-
-h2 ~ h3 {
-    color: #AB92BF;
-}
-
-nav {
+.functionalities-container {
     display: flex;
-    padding: 15px;
-    margin: 15px;
-    gap : 100px;
     justify-content: center;
-    align-items: center;
-
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
-nav a {
+
+.pages-card {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    width: 700px;
+}
+
+.sample-recipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.habit-icon img{
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#fakegraph{
+    height: 450px;
+    width: 609px;
+}
+
+.pages-card a{
+    display: flex;
     text-decoration: none;
     align-items: center;
     align-content: center;
     align-self: center;
-    color: #00455c;
+    color: white;
     border-radius: 5px;
     font-size: 120%;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #ffffff;
+    margin-top : 30px;
+    background-color: #00455c;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
 }
 
-nav a:nth-child(1):hover, a:nth-child(2):hover, a:nth-child(3):hover, a:nth-child(4):hover {
-    background-color: #bfbfbf;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    color: white;
-    transition: 0.5s;
-    transform: scale(150%);
-}
-
-section a {
-    color: #655A7C;
-    font-style: italic;
-}
-
-section ol, section ul{
-    display: inline-block;
-    text-align: center;
-}
-
-#citation, .definition {
-    color: #655A7C;
-    font-size: 150%;
-    font-style: italic;
-}
-
-#postit {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    justify-content: space-between;
-    font-size: 150%;
-}
-
-.postit-item {
-    background-color: #f9f9f9;
-    border: 1px solid ;
-    padding: 5px;
-    margin: 5px;
-    position: relative;
-}
-
-#postit .postit-item ul {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-}
-
-#postit .postit-item:hover ul {
-    display: block;
+.pages-card a:hover{
+    background-color: #0097ca;
+    transform: scale(130%);
 }
 
 
-#postit .postit-item ul li:hover {
-    background-color: #f1f1f1;
+.vertical-separator {
+    margin-top: 20px;
+    height: 700px;
+    width: 1.5px;
+    background-color: #00455c;
+    margin-bottom: 20px;
 }
 
-#postit .postit-item:nth-child(1), .postit-item:nth-child(2), .postit-item:nth-child(3), .postit-item:nth-child(4), .postit-item:nth-child(5) {
-    background-color: #31572c;
-    color: #90a955;
-}
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid #2e7d32;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #a7c957;
-    color: white;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #6a994e;
-    color: white;
-}
-
-table, td, caption {
-    border: 2px solid #333;
-}
-
-caption, thead {
-    background-color: #2e7d32;
-    color: white;
-    font-weight: bold;
-    font-size: 200%;
-}
-
-caption {
-    margin-top : 15px;
-}
-
-
-fieldset {
-    border: 1px solid #2e7d32;
-    margin-bottom: 10px;
-}
-
-fieldset legend {
-    padding: 5px 10px;
-    background-color: #2e7d32;
-    border-radius: 8px;
-}
-
-/*nouveauté*/
-
-.progress-section {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-#xyChart {
-    width: 400px;   /* ou 100%, ou auto selon ton besoin */
-    height: 250px;  /* ajuste selon ce que tu préfères */
-}
-
-
-/* Conteneur du graphique */
-#graphContainer {
-    flex : 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-}
-
-#graphContainer.hidden,
-#graphInfo.hidden {
-    display: none;
-}
-
-/* Conteneur des menus principaux */
-.menu-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: flex-start;
-    margin: 20px;
-}
-
-/* Un menu avec bouton principal + sous-boutons */
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-/* Bouton principal (menu déroulant) */
-.menu-toggle {
-    background-color: white;
-    color: black;
-    padding: 10px 14px;
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-}
-
-/* Sous-menu vertical */
-.submenu {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/* Boutons des sous-menus */
-.submenu button {
-    padding: 8px 14px;
-    border: none;
-    border-radius: 6px;
-    background-color: white;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    text-align: left;
-    width: 400px;
-    font-size : 16px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-
-}
-
-.submenu button:hover, .menu-toggle:hover {
-    background-color: #eee;
-    font-width: bold;
-    transition: 0.2s;
-
-}
-
-#pointList li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.pagination-controls {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-}
-
-.pagination-controls button {
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    background-color: #eee;
-    cursor: pointer;
-}
-
-.pagination-controls button:hover {
-    background-color: #ccc;
-}
-
-#pointList button {
-    margin-left: 10px;
-    padding: 4px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff4d4d;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    font-size: 0.85rem;
-}
-
-#pointList button:hover {
-    background-color: #e60000;
-}
-
-
-
-.hidden {
-    display: none;
-}
 

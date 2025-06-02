@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel= "stylesheet" href="../css/about.css">
-    <title>FitTrack Life About</title>
+    <link rel= "stylesheet" href="../css/faq.css">
+    <title>FitTrack Life FAQ</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -23,51 +23,36 @@
 
 <section id = "pre-about">
     <div class="about-start">
-        <h1>About Us</h1>
-        <p class = "citation"> Founded by fitness enthusiasts Samuel Mollière and Iza Lakrib, Sport Track is a
-            wellness-focused company dedicated to promoting a healthy lifestyle through nutrition and smart
-            tracking tools. Our mission is to make balanced eating and daily movement accessible and enjoyable
-            for everyone. No more complications with Sport Track ! You can click on the efrei logo to access your github
-            page or enter this link in your browser : https://github.com/Samu7l/WebProgramming
+        <h1>FAQs section</h1>
+        <p class = "citation"> Here, we can ask any questions you may have about sports and our super intellingent
+            model will try to respond to you as much as he can. If you have any more specific questions, please report
+            them on the "More" Page.
         </p>
     </div>
     <div class="about-end">
-        <a href="https://github.com/Samu7l/WebProgramming">
-            <img src="../img/Efrei.png"/>
-        </a>
+        <img src="../img/Efrei.png"/>
     </div>
 </section>
 
 <section class="creator-section">
     <div class="container-creator">
-        <div class="card-creator">
-            <div class="img-creator">
-                <img src="../img/Sam.jpg"/>
+
+        <div class="chat-container">
+
+            <div class="chat-text">
+                <div id="history-box" class="chat-box"></div>
+                <div id="chat-box" class="chat-box"></div>
             </div>
-            <div>
-                <h1>Samuel MOLLIÈRE</h1>
-                <p>I'm Samuel, a second-year student at Efrei, and this project was a great opportunity for me to
-                    explore HTML, CSS, and JavaScript for the very first time. As a sports enthusiast, I found the
-                    idea of creating a website around this theme really exciting and meaningful.
-                </p>
+
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Ask your question here...">
+                <div class="btn-container">
+                    <button class = "btnbox" onclick="clearMessages()">Clear history</button>
+                    <button class = "btnbox" id="send-btn" onclick="fetchJSON('../json/intents.json')">Send</button>
+                </div>
             </div>
         </div>
-
-
-        <div class="card-creator">
-            <div class="img-creator">
-                <img src="../img/Iza.jpg"/>
-            </div>
-            <div>
-                <h1>Iza LAKRIB</h1>
-                <p>
-                    I'm Iza, a second-year student at Efrei. This project gave me the chance to dive into web development
-                    and discover HTML, CSS, and JavaScript. As someone who's passionate about dance—especially hip-hop
-                    and TikTok trends—I loved the idea of building a website focused on sports and movement. It felt
-                    like the perfect theme to combine fun and creativity!
-                </p>
-            </div>
-        </div>
+        <script src="../chatbot.js"></script>
     </div>
 </section>
 

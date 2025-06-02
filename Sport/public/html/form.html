@@ -1,194 +1,223 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Green IT/Quiz</title>
-        <link rel= "stylesheet" href="../css/form.css">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+    <link rel= "stylesheet" href="../css/form.css">
+    <title>FitTrack Life Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    </head>
-    <body>
-        <header>
-            <a href="https://www.greenit.net/">
-                <img alt="image alt text" src="../img/Logo2.jpg"/>
-            </a>
-        </header>
+</head>
+<body>
+<header>
+    <a href="https://github.com/Samu7l/WebProgramming">
+        <img alt="image alt text" src="../img/Logo2.jpg"/>
+    </a>
+</header>
 
-        <nav>
-            <a href="/html/home.html">Home</a>
-            <a href="/html/recipe.html">Healthy Recipes</a>
-            <a href="/html/progress.html">My progress</a>
-            <a href="/html/form.html">Quizz</a>
-        </nav>
+<nav>
+    <a href="../html/home.html">Home</a>
+    <a href="../html/recipe.html">Healthy Recipes</a>
+    <a href="../html/progress.html">My progress</a>
+    <a href="../html/form.html">More</a>
+</nav>
 
-        <form>
+<section class="section-box">
+    <h2>You have a question ? </h2>
+</section>
 
-            <h2>Registration</h2>
-            <fieldset>
-                <legend>Your informations</legend>
 
-                    <br>
+<form>
 
-                    <div>
-                        <label for="name">Name :</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
+    <fieldset>
+        <legend>Your informations</legend>
 
-                    <br>
-
-                    <div>
-                        <label for="surname">Surname :</label>
-                        <input type="text" id="surname" name="surname" required>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <label for="birth_date">Birth date:</label>
-                        <input type="date" id="birth_date" name="birth_date" required>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <label for="mail">Mail address:</label>
-                        <input type="email" id="mail" name="mail" required>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <label for="status">Status :</label>
-                        <select id="status" name="status" required>
-                            <option value="" disabled selected>Select your status</option>
-                            <option value="student">Student</option>
-                            <option value="developer">Developer</option>
-                            <option value="entrepreneur">Entrepreneur</option>
-                        </select>
-                    </div>
-
-                    <br>
-                    
-            </fieldset>
-
-            <br>
-
-            <fieldset>
-                <legend>Quiz - Green IT</legend>
-                <div>
-                    <p>
-                        1. What is the Green IT?<br>
-                        <input type="radio" id="q1a" name="q1" value="a">
-                        <label for="q1a">a) A practice aimed at reducing the environmental impact of information technologies.</label><br>
-
-                        <input type="radio" id="q1b" name="q1" value="b">
-                        <label for="q1b">b) A system for recycling old computers.</label><br>
-
-                        <input type="radio" id="q1c" name="q1" value="c">
-                        <label for="q1c">c) A method for increasing the energy consumption of servers.</label><br>
-                    </p>
-                </div>
-
-                <div>
-                    <p>
-                        2. What is the main objective of Green IT?<br>
-                        <input type="checkbox" id="q2a" name="q2" value="a">
-                        <label for="q2a">a) Reduce energy consumption.</label><br>
-
-                        <input type="checkbox" id="q2b" name="q2" value="b">
-                        <label for="q2b">b) Minimise electronic waste.</label><br>
-
-                        <input type="checkbox" id="q2c" name="q2" value="c">
-                        <label for="q2c">c) Optimising the performance of electronic devices.</label><br>
-                    </p>
-                </div>
-
-                <div>
-                    <p>
-                        3. Give an example of a Green IT practice:<br>
-                        <input type="text" id="q3" name="q3" required>
-                    </p>
-                </div>
-            </fieldset>
-
-            <br>
-
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-
-        </form>
         <br>
 
-        <footer>
-            <div class="footer-container">
-                <div class = "footer-address">
-                    <div class ="h1">
-                        Address
-                    </div>
-                    <div class ="h2">
-                        30-32 Av. de la République <hr>
-                        94800 Villejuif
-                    </div>
-                </div>
+        <div>
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required>
+        </div>
 
-                <div class = "footer-address">
-                    <div class ="h1">
-                        E-mail
-                    </div>
-                    <div class ="h2">
-                        <a class="clickable-footer" href="mailto:fit-track-life-trashcan@gmail.com" class="ContactUS">Contact us</a> <hr>
-                        fit-track-life@gmail.com
-                    </div>
-                </div>
+        <br>
 
-                <div class = "footer-address">
-                    <div class ="h1">
-                        Questions ?
-                    </div>
-                    <div class ="h2">
-                        FAQ
-                    </div>
+        <div>
+            <label for="surname">Surname :</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
 
-                    <div class ="h2">
-                        <a class="clickable-footer" href="/html/about.html">About us</a>
-                    </div>
-                </div>
+        <br>
 
-                <div class = "footer-address">
-                    <div class ="h1">
-                        Download FitTrack Life
-                    </div>
-                    <div class ="h2">
-                        <img alt="image alt text" src="../img/AppStore.png" height="50px" width="165px"/>
-                    </div>
+        <div>
+            <label for="birth_date">Birth date :</label>
+            <input type="date" id="birth_date" name="birth_date" required>
+        </div>
 
-                    <div class ="h2">
-                        <img alt="image alt text" src="../img/GooglePlay.png" height="50px" width="165px"/>
-                    </div>
-                </div>
+        <br>
+
+        <div>
+            <label for="mail">Email address :</label>
+            <input type="email" id="mail" name="mail" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Your question :</label><br>
+            <textarea id="status" rows="10" cols="40">Your question...</textarea>
+        </div>
+
+        <br>
+
+    </fieldset>
+    <br>
+</form>
+
+<form>
+
+    <fieldset>
+        <legend>Time for the fitness quiz !</legend>
+        <div>
+            <p class="texts">
+                1. What food is recommended for better recovery ?<br>
+                <input type="radio" id="q1a" name="q1" value="a">
+                <label for="q1a">Quinoa</label><br>
+
+                <input type="radio" id="q1b" name="q1" value="b">
+                <label for="q1b">Zucchini</label><br>
+
+                <input type="radio" id="q1c" name="q1" value="c">
+                <label for="q1c">French fries</label><br>
+            </p>
+        </div>
+
+        <div>
+            <p class="texts">
+                2. What is better for energy ?<br>
+                <input type="radio" id="q2a" name="q2" value="a">
+                <label for="q2a">Creatine</label><br>
+
+                <input type="radio" id="q2b" name="q2" value="b">
+                <label for="q2b">Omega 3</label><br>
+
+                <input type="radio" id="q2c" name="q2" value="c">
+                <label for="q2c">Sodium</label><br>
+            </p>
+        </div>
+
+        <div>
+            <p class="texts">
+                3. What are the foods to avoid ?<br>
+                <input type="text" id="q3" name="q3" required>
+            </p>
+        </div>
+
+        <div>
+            <p class="texts">
+                4. Which one is better ?<br>
+                <input type="radio" id="q4a" name="q4" value="a">
+                <label for="q4a">Whole grains</label><br>
+
+                <input type="radio" id="q4b" name="q4" value="b">
+                <label for="q4b">White grains</label><br>
+            </p>
+        </div>
+
+        <div>
+            <p class="texts">
+                5. What is a good life hygiene ?<br>
+                <input type="checkbox" id="q5a" name="q5" value="a">
+                <label for="q5a">A minimum of 7 hours of sleep and a good nutrition score</label><br>
+
+                <input type="checkbox" id="q5b" name="q5" value="b">
+                <label for="q5b">A minimum of 7 hours of sleep and some wine</label><br>
+
+                <input type="checkbox" id="q5c" name="q5" value="c">
+                <label for="q5c">Less than 7 hours of sleep and a lot of sport activity</label><br>
+
+                <input type="checkbox" id="q5d" name="q5" value="d">
+                <label for="q5d">Not too much processed sugar</label><br>
+            </p>
+        </div>
+    </fieldset>
+
+    <br>
+
+    <div>
+        <button type="submit">Submit my answers !</button>
+    </div>
+
+</form>
+<br>
+
+<footer>
+    <div class="footer-container">
+        <div class = "footer-address">
+            <div class ="h1">
+                Address
+            </div>
+            <div class ="h2">
+                30-32 Av. de la République <hr>
+                94800 Villejuif
+            </div>
+        </div>
+
+        <div class = "footer-address">
+            <div class ="h1">
+                E-mail
+            </div>
+            <div class ="h2">
+                <a class="clickable-footer" href="mailto:fit-track-life@gmail.com" class="ContactUS">Contact us</a> <hr>
+                fit-track-life@gmail.com
+            </div>
+        </div>
+
+        <div class = "footer-address">
+            <div class ="h1">
+                Questions ?
+            </div>
+            <div class ="h2">
+                <a class="clickable-footer" href="/html/faq.html"> See our FAQs</a>
             </div>
 
-            <div class="footer-separator">
-                <div class="line"></div>
+            <div class ="h2">
+                <a class="clickable-footer" href="/html/about.html">About us</a>
+            </div>
+        </div>
+
+        <div class = "footer-address">
+            <div class ="h1">
+                Download FitTrack Life
+            </div>
+            <div class ="h2">
+                <img alt="image alt text" src="../img/AppStore.png" height="50px" width="165px"/>
             </div>
 
-            <div class="footer-button">
-                <div class ="bellow-line">
-                    <div class="social-icon">
-                        <a href="https://facebook.com" target="_blank" class = "Icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank" class = "Icon"> <i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/clay_clay94/" target="_blank" class = "Icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com" target="_blank" class = "Icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://youtube.com" target="_blank" class = "Icon"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class = "bellow-line">
-                    <div class ="h1-2">
-                        Created by Samuel & Iza
-                    </div>
-                </div>
+            <div class ="h2">
+                <img alt="image alt text" src="../img/GooglePlay.png" height="50px" width="165px"/>
             </div>
-        </footer>
-    </body>
+        </div>
+    </div>
+
+    <div class="footer-separator">
+        <div class="line"></div>
+    </div>
+
+    <div class="footer-button">
+        <div class ="bellow-line">
+            <div class="social-icon">
+                <a href="https://www.facebook.com/fitnessparkofficiel/?locale=fr_FR" target="_blank" class = "Icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/fitnessparkfr?lang=fr" target="_blank" class = "Icon"> <i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/fitnessparkofficiel/" target="_blank" class = "Icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://fr.linkedin.com/company/fitnesspark" target="_blank" class = "Icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UC13OxvvHFIPK_zFLY5VVbcw" target="_blank" class = "Icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class = "bellow-line">
+            <div class ="h1-2">
+                Created by Samuel & Iza
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
 </html>

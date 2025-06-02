@@ -1,3 +1,4 @@
+/* Étape 2 */
 body {
     background-color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -16,7 +17,6 @@ header {
     font-size: 120%;
 }
 
-
 header img {
     border-radius: 10px;
     border-radius: 10px;
@@ -25,6 +25,7 @@ header img {
     width : 400px;
     margin: auto;
 }
+
 
 
 footer{
@@ -117,6 +118,7 @@ footer{
     transition: 0.2s;
 }
 
+
 .clickable-footer {
     text-decoration: none;
     color: white;
@@ -125,8 +127,7 @@ footer{
 }
 
 
-/*Partie navigation entre les pages */
-
+/* Navigation entre les pages */
 
 nav {
     display: flex;
@@ -134,9 +135,10 @@ nav {
     margin: 15px;
     gap : 100px;
     justify-content: center;
+    align-items: center;
 }
 
-nav a {
+nav a, button {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -161,13 +163,8 @@ nav a:nth-child(1):hover, a:nth-child(2):hover, a:nth-child(3):hover, a:nth-chil
 }
 
 
-/* Partie basic*/
 
-#citation, .definition {
-    color: #655A7C;
-    font-size: 150%;
-    font-style: italic;
-}
+/*basic*/
 
 section {
     margin: 15px 15px;
@@ -179,135 +176,163 @@ section {
 
 }
 
-/*Partie lié à la progression*/
+section h1 {
+    color: #00455c;
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+}
 
-.main-zone{
+.citation {
+    color: #655A7C;
+    font-size: 150%;
+    font-style: italic;
+}
+
+
+
+#pre-about{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+
+}
+
+
+.about-end img{
+    width: 60%;
+    height: 40%;
+}
+
+about-start{
+    width: 60%;
+}
+
+.creator-section {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px;
+    border-radius: 35px;
+    background-color: #fff;
+}
+
+
+.container-creator {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+
+.chat-container {
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #0e7013;
+    color: #ebe6e6;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-text{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap : 50px;
-    margin-top : 15px;
+    gap : 40px;
 }
 
-
-.menu-and-graph {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    flex-wrap: wrap;
-    width: 98%;
-}
-
-/* Pour le graph*/
-
-#xyChart {
-    width: 400px;
-    height: 250px;
-}
-
-#graphContainer {
+.chat-box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-}
-
-
-#graphContainer.hidden,
-#graphInfo.hidden {
-    display: none;
+    height: 350px;
+    width: 600px;
+    overflow-y: scroll;
+    padding: 10px;
 }
 
 
 
-
-/* Bouton principal (ça active les menu déroulant) */
-.menu-toggle {
-    background-color: white;
-    color: black;
-    padding: 10px 14px;
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-}
-
-/* Liste exos des séances */
-.submenu {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/* Boutons des sous-menus */
-.submenu button {
-    padding: 8px 14px;
-    border: none;
-    border-radius: 6px;
-    background-color: white;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    text-align: left;
-    width: 400px;
-    font-size : 16px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-
-}
-
-.submenu button:hover, .menu-toggle:hover {
-    background-color: #eee;
-    font-width: bold;
-    transition: 0.5s;
-
-}
-
-#pointList li {
+.user-message, .bot-message, .og-message-bot, .og-message-user {
     margin-bottom: 10px;
-    line-height: 1.6;
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
-.pagination-controls {
-    margin-top: 10px;
+.user-message {
+    background-color: #ffb86f;
+    color: #333;
+    align-self: flex-end;
+    font-size: 1.2rem;
+    text-align: right;
+
+}
+
+.bot-message {
+    background-color: #8cb9ff;
+    color: #333;
+    align-self: flex-start;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.og-message-user {
+    background-color: #ffd6af;
+    color: #333;
+    align-self: flex-end;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.og-message-bot {
+    background-color: #b6d6ff;
+    color: #333;
+    font-size: 1.2rem;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.btn-container{
     display: flex;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.pagination-controls button {
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    background-color: #eee;
-    cursor: pointer;
+input[type="text"]  {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top : 10px;
+    border: 1px solid #2e7d32; /* Couleur verte */
+    border-radius: 8px;
 }
 
-.pagination-controls button:hover {
-    background-color: #ccc;
-}
 
-#pointList button {
-    margin-left: 10px;
-    padding: 4px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff4d4d;
+button, input[type="button"] {
+    background-color: #00455c;
     color: white;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-    font-size: 0.85rem;
+    margin : auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: block;
 }
 
-#pointList button:hover {
-    background-color: #e60000;
-}
-
-.hidden {
-    display: none;
+button:hover, input[type="button"]:hover {
+    background-color: #0097ca;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    transform: scale(120%);
 }

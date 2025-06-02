@@ -121,19 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    /*
-    document.querySelectorAll('.menu-container .menu-toggle').forEach(toggleBtn => {
-        toggleBtn.addEventListener('click', () => {
-            const submenu = toggleBtn.nextElementSibling;
-
-            document.querySelectorAll('.menu-container .submenu').forEach(menu => {
-                if (menu !== submenu) menu.classList.add('hidden');
-            });
-
-            submenu.classList.toggle('hidden');
-        });
-    });
-    */
 
     document.querySelectorAll('.menu-toggle').forEach(button => {
         button.addEventListener('click', () => {

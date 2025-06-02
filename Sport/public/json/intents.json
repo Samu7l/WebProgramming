@@ -1,0 +1,233 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey",
+        "Good morning",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello, how can I help you today?",
+        "Hi there! Ready to talk fitness?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you",
+        "Goodbye",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Keep pushing!",
+        "See you soon, stay active!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "I appreciate it"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad I could help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "ask_diet",
+      "patterns": [
+        "What should I eat after workout?",
+        "Post workout meal?",
+        "Best recovery food?"
+      ],
+      "responses": [
+        "After a workout, aim for a mix of protein and carbs like chicken with rice or a protein smoothie."
+      ]
+    },
+    {
+      "tag": "ask_hydration",
+      "patterns": [
+        "How much water should I drink?",
+        "Do I need to hydrate?",
+        "Hydration tips?"
+      ],
+      "responses": [
+        "Aim for 2-3 liters per day. During workouts, sip regularly to stay hydrated."
+      ]
+    },
+    {
+      "tag": "ask_warmup",
+      "patterns": [
+        "How should I warm up?",
+        "Warm-up routine?",
+        "Pre-workout exercises?"
+      ],
+      "responses": [
+        "Start with 5-10 minutes of light cardio followed by dynamic stretches."
+      ]
+    },
+    {
+      "tag": "ask_cardio",
+      "patterns": [
+        "What is a good cardio workout?",
+        "Cardio ideas?",
+        "How to burn fat?"
+      ],
+      "responses": [
+        "Try running, cycling, HIIT, or jump rope for effective cardio."
+      ]
+    },
+    {
+      "tag": "ask_strength",
+      "patterns": [
+        "How to build muscle?",
+        "Strength training tips?",
+        "Best muscle workouts?"
+      ],
+      "responses": [
+        "Focus on compound movements like squats, deadlifts, and bench press. Train consistently."
+      ]
+    },
+    {
+      "tag": "ask_nutrition",
+      "patterns": [
+        "What is a balanced diet?",
+        "How to eat healthy?",
+        "Best foods for athletes?"
+      ],
+      "responses": [
+        "A balanced diet includes lean proteins, whole grains, fruits, vegetables, and healthy fats."
+      ]
+    },
+    {
+      "tag": "ask_supplements",
+      "patterns": [
+        "Should I take protein powder?",
+        "What supplements are good?",
+        "Is creatine safe?"
+      ],
+      "responses": [
+        "Protein powder can help if you lack dietary protein. Creatine is well-studied and effective."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "I feel lazy",
+        "Motivate me",
+        "I'm tired of working out"
+      ],
+      "responses": [
+        "Consistency is key. Small steps every day lead to big results!",
+        "Remember why you started!"
+      ]
+    },
+    {
+      "tag": "sleep_recovery",
+      "patterns": ["How important is sleep for athletes?", "Do I need more sleep if I work out?", "Sleep and recovery?"],
+      "responses": ["Sleep is essential for muscle recovery and performance. Aim for 7-9 hours per night."]
+    },
+    {
+      "tag": "injury_prevention",
+      "patterns": ["How can I avoid injuries?", "Tips to prevent injury?", "I often get hurt while training"],
+      "responses": ["Warm up, stretch, use proper form, and don’t skip rest days!"]
+    },
+    {
+      "tag": "stretching",
+      "patterns": ["Should I stretch after workouts?", "Stretching routine?", "Do I need to stretch every day?"],
+      "responses": ["Yes! Stretching improves flexibility and reduces soreness."]
+    },
+    {
+      "tag": "rest_days",
+      "patterns": ["Are rest days important?", "Can I work out every day?", "When should I rest?"],
+      "responses": ["Yes, rest is key to progress. Muscles grow when you're resting, not training."]
+    },
+    {
+      "tag": "home_workouts",
+      "patterns": ["How to train at home?", "Can I work out without a gym?", "No gym, what to do?"],
+      "responses": ["Bodyweight exercises like push-ups, squats, and planks are great for home workouts."]
+    },
+    {
+      "tag": "fitness_apps",
+      "patterns": ["What app should I use for workouts?", "Best fitness app?", "App to track my fitness?"],
+      "responses": ["Apps like Strava, MyFitnessPal, and Nike Training Club are great tools!"]
+    },
+    {
+      "tag": "running_shoes",
+      "patterns": ["Which shoes are best for running?", "Do shoes matter?", "Best shoes for long runs?"],
+      "responses": ["Choose shoes adapted to your stride and terrain. Comfort and support are key!"]
+    },
+    {
+      "tag": "training_plan",
+      "patterns": ["How to make a training plan?", "Do I need a workout schedule?", "Plan for fitness goals?"],
+      "responses": ["Yes! Set goals and follow a progressive plan mixing cardio, strength, and rest."]
+    },
+    {
+      "tag": "vegan_diet",
+      "patterns": ["Can I be fit on a vegan diet?", "Is plant-based good for athletes?", "Vegan nutrition tips?"],
+      "responses": ["A well-planned vegan diet can meet all your needs. Focus on legumes, grains, and B12."]
+    },
+    {
+      "tag": "morning_vs_evening_workout",
+      "patterns": ["Should I work out in the morning or evening?", "Best time to train?", "Morning vs night training?"],
+      "responses": ["Both work! Choose the time that fits your schedule and energy levels best."]
+    },
+    {
+      "tag": "core_training",
+      "patterns": ["How to strengthen my core?", "Core workouts?", "Abs training tips?"],
+      "responses": ["Planks, crunches, and leg raises are great for building a strong core."]
+    },
+    {
+      "tag": "weight_loss",
+      "patterns": ["How to lose weight?", "Best way to burn fat?", "Tips for fat loss?"],
+      "responses": ["Combine a calorie deficit with regular cardio and strength workouts."]
+    },
+    {
+      "tag": "sports_drinks",
+      "patterns": ["Should I drink sports drinks?", "Are energy drinks good?", "Gatorade or water?"],
+      "responses": ["For intense or long workouts, sports drinks can help replenish electrolytes."]
+    },
+    {
+      "tag": "mental_health",
+      "patterns": ["Does sport help with anxiety?", "How to stay motivated mentally?", "Training and mental health?"],
+      "responses": ["Exercise releases endorphins and reduces stress. Great for your mental well-being!"]
+    },
+    {
+      "tag": "tracking_progress",
+      "patterns": ["How do I measure my progress?", "Track fitness goals?", "Am I improving?"],
+      "responses": ["Use journals, apps, or photos. Don’t rely only on the scale!"]
+    },
+    {
+      "tag": "pre_workout",
+      "patterns": ["What to eat before training?", "Best pre-workout snack?", "Fuel before exercise?"],
+      "responses": ["Eat something light with carbs and a bit of protein 1-2h before training."]
+    },
+    {
+      "tag": "training_plateau",
+      "patterns": ["I stopped improving", "Why am I not progressing?", "Fitness plateau tips?"],
+      "responses": ["Change up your routine, rest more, or increase intensity to break plateaus."]
+    },
+    {
+      "tag": "training_for_endurance",
+      "patterns": ["How to improve endurance?", "Long distance training tips?", "Build stamina?"],
+      "responses": ["Train consistently, increase mileage gradually, and mix in tempo runs."]
+    },
+    {
+      "tag": "cross_training",
+      "patterns": ["Should I do different sports?", "Is cross-training good?", "Benefits of cross-training?"],
+      "responses": ["Cross-training prevents overuse injuries and boosts overall performance."]
+    },
+    {
+      "tag": "gym_intimidation",
+      "patterns": ["I'm scared of the gym", "Gym anxiety", "How to start going to the gym?"],
+      "responses": ["Start with a plan, go at quiet times, and remember: everyone was a beginner once!"]
+    }
+  ]
+}

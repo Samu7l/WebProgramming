@@ -144,20 +144,19 @@ nav a {
     align-items: center;
     align-content: center;
     align-self: center;
-    color: #00455c;
+    color: white;
     border-radius: 5px;
     font-size: 120%;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    background-color: #00455c;
+    box-shadow: 0 0 10px #00455c;
     transition: 0.5s;
 }
 
 nav a:nth-child(1):hover, a:nth-child(2):hover, a:nth-child(3):hover, a:nth-child(4):hover {
-    background-color: #bfbfbf;
+    background-color: #0097ca;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    color: white;
     transition: 0.5s;
     transform: scale(150%);
 }
@@ -292,3 +291,44 @@ th {
     cursor: pointer;
 }
 
+/* Table */
+
+table, th, td {
+    border: none;
+}
+
+tr, th{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+tbody, td {
+    padding: 15px 25px;
+    flex: 1;
+    text-align: center;
+}
+
+th, td {
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+th {
+    display: block;
+    margin-bottom: 15px;
+    background-color: #00455c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    flex: 1;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+tr:nth-child(even){
+    background-color: #eeeeee;
+}

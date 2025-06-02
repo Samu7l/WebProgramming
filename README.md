@@ -42,12 +42,15 @@ The site is composed of multiple pages offering various features:
 - Interactive chatbot to answer wellness questions  
 - Fully responsive layout compatible with desktop and mobile  
 
-## 🚀 How to Run the Project
+## 🚀 How to Run the Project - Very Important
 
-1. Clone the repository  
-2. Open `html/home.html` in your browser  
-3. Navigate using the header links to explore all features  
-4. No backend required – this is a front-end-only application  
+1. Clone the repository
+2. Make Sure you have Node installed or Live Server
+3. In your console enter : `cd .\Sport\`
+4. Then in the console enter : `node .\server.js`
+5. You should have a message : `Serveur prêt sur https://localhost:3000/progress`
+6. Navigate using the header links to explore all features  
+7. Since you have installed live server or node, you don't need backups, it's writing the value your register right into data.csv  
 
 ## 🧠 Created By
 

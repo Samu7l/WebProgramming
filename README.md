@@ -39,8 +39,7 @@ The site is composed of multiple pages offering various features:
 - Add your own training points and visualize progress over time  
 - Learn about healthy foods and supplements  
 - Take a fitness quiz and check your knowledge  
-- Interactive chatbot to answer wellness questions  
-- Fully responsive layout compatible with desktop and mobile  
+- Interactive chatbot to answer wellness questions   
 
 ## 🚀 How to Run the Project - Very Important
 
@@ -59,6 +58,13 @@ The site is composed of multiple pages offering various features:
 
 ---
 
+
 Feel free to contribute, fork, or get inspired for your own healthy lifestyle platform.  
 [GitHub Repository](https://github.com/Samu7l/WebProgramming)
+
+
+
+## Perspectives :
+1. Add more recipes to our websites
+---
 
